@@ -3,7 +3,7 @@ import { BiCalendar } from "react-icons/bi"
 import Search from "./components/Search"
 import AddAppointment from "./components/AddAppointment"
 import AppointmentInfo from "./components/AppointmentInfo"
-import picture from './Paradise_Hotel.jpeg'
+import "./app.scss"
 
 
 function App() {
@@ -42,7 +42,6 @@ function App() {
 
   return (
     <div className="App container mx-auto mt-3 font-thin">
-      <img src={picture} alt='Hotel Paradise' className='object-fill w-full h-96 mb-8'/>
       <h1 className="text-5xl mb-3">
         <BiCalendar className="inline-block text-red-400 " />Hotel Paradise Reservations</h1>
       <AddAppointment

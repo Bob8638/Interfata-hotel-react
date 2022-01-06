@@ -8,7 +8,7 @@ const AppointmentInfo = ({ reservation, onDeleteReservation }) => {
         <BiTrash /></button>
       <div className="flex-grow">
         <div className="flex items-center">
-          <span className="flex-none font-medium text-2xl text-blue-500">{reservation.petName}</span>
+          <span className="flex-none font-medium text-2xl text-white-500">{reservation.petName}</span>
           <span className="flex-grow text-right">{reservation.aptDate}</span>
         </div>
         <div className="leading-tight">{reservation.aptNotes}</div>
