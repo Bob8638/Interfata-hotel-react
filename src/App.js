@@ -10,13 +10,13 @@ function App() {
 
   let [appointmentList, setAppointmentList] = useState([]);
   let [query, setQuery] = useState("");
-  let [sortBy, setSortBy] = useState("petName");
+  let [sortBy, setSortBy] = useState("userName");
   let [orderBy, setOrderBy] = useState("asc");
 
   const filteredAppointments = appointmentList.filter(
     item => {
       return (
-        item.petName.toLowerCase().includes(query.toLowerCase()) ||
+        item.userName.toLowerCase().includes(query.toLowerCase()) ||
         item.aptNotes.toLowerCase().includes(query.toLowerCase())
       )
     }
@@ -60,8 +60,8 @@ function App() {
         {filteredAppointments
           .map(appointment => (
             <AppointmentInfo key={appointment.id}
-              reservation={appointment}
-              onDeleteReservation={
+              appointment={appointment}
+              onDeleteAppointment={
                 appointmentId =>
                   setAppointmentList(appointmentList.filter(appointment =>
                     appointment.id !== appointmentId))

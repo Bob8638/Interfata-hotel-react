@@ -1,31 +1,31 @@
 [
   {
     "id": "0",
-    "petName": "Stefan Bogdan",
+    "userName": "Stefan Bogdan",
     "aptNotes": "Client wants spa and parking",
     "aptDate": "2022-01-12"
   },
   {
     "id": "1",
-    "petName": "Andreea Stefan",
+    "userName": "Andreea Stefan",
     "aptNotes": "Client wants parking",
     "aptDate": "2022-01-13"
   },
   {
     "id": "2",
-    "petName": "Bogdan Ursaru",
+    "userName": "Bogdan Ursaru",
     "aptNotes": "Client wants double bed and premium drinks on the bar",
     "aptDate": "2022-01-16"
   },
   {
     "id": "2",
-    "petName": "Ramona Olaru",
+    "userName": "Ramona Olaru",
     "aptNotes": "Client wants spa, parking and breakfast at room",
     "aptDate": "2022-01-19"
   },
   {
     "id": "3",
-    "petName": "Tudor Vladimirescu",
+    "userName": "Tudor Vladimirescu",
     "aptNotes": "Client ask for room with view at the sea",
     "aptDate": "2022-01-12"
   }

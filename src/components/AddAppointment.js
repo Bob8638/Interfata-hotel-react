@@ -1,9 +1,9 @@
 import { BiCalendarPlus } from "react-icons/bi";
 import { useState } from 'react';
 
-const AddReservation = ({ onSendAppointment, lastId }) => {
+  const AddAppointment = ({ onSendAppointment, lastId }) => {
   const clearData = {
-    petName: '',
+    userName: '',
     aptDate: '',
     aptTime: '',
     aptNotes: ''
@@ -14,7 +14,7 @@ const AddReservation = ({ onSendAppointment, lastId }) => {
   function formDataPublish() {
     const appointmentInfo = {
       id: lastId + 1,
-      petName: formData.petName,
+      userName: formData.userName,
       aptDate: formData.aptDate,
       aptTime: formData.aptTime,
       aptNotes: formData.aptNotes
@@ -38,13 +38,13 @@ const AddReservation = ({ onSendAppointment, lastId }) => {
         </div>
 
           <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
-            <label htmlFor="petName" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+            <label htmlFor="userName" className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
               Name
           </label>
             <div className="mt-1 sm:mt-0 sm:col-span-2">
-              <input type="text" name="petName" id="petName"
-                onChange={(event) => { setFormData({ ...formData, petName: event.target.value }) }}
-                value={formData.petName}
+              <input type="text" name="userName" id="userName"
+                onChange={(event) => { setFormData({ ...formData, userName: event.target.value }) }}
+                value={formData.userName}
                 className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
             </div>
           </div>
@@ -82,7 +82,7 @@ const AddReservation = ({ onSendAppointment, lastId }) => {
               <textarea id="aptNotes" name="aptNotes" rows="3"
                 onChange={(event) => { setFormData({ ...formData, aptNotes: event.target.value }) }}
                 value={formData.aptNotes}
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Other requirements to the hotel"></textarea>
+                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Other requirements to the hotel"/>
             </div>
           </div>
 
@@ -99,4 +99,4 @@ const AddReservation = ({ onSendAppointment, lastId }) => {
   )
 }
 
-export default AddReservation
+export default AddAppointment
